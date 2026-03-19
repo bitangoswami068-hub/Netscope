@@ -1,0 +1,26 @@
+import os
+from utils.scanner import scan_site
+
+BANNER = """
+██████╗ ██╗████████╗ █████╗ ███╗   ██╗
+██╔══██╗██║╚══██╔══╝██╔══██╗████╗  ██║
+██████╔╝██║   ██║   ███████║██╔██╗ ██║
+██╔══██╗██║   ██║   ██╔══██║██║╚██╗██║
+██████╔╝██║   ██║   ██║  ██║██║ ╚████║
+╚═════╝ ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═══╝
+"""
+
+while True:
+    os.system("clear")
+    print("\033[1;32m" + BANNER + "\033[0m")
+    print("[1] Scan Website")
+    print("[2] Exit")
+
+    choice = input("\nEnter choice: ")
+
+    if choice == "1":
+        url = input("Enter URL: ")
+        scan_site(url)
+        input("\nPress Enter...")
+    elif choice == "2":
+        break
