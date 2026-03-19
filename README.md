@@ -10,4 +10,5 @@ Simple website & network scanner for Kali Linux.
 
 ## Run
 cd netscope
+
 python3 main.py
