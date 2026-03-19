@@ -9,4 +9,5 @@ Simple website & network scanner for Kali Linux.
 - Port scan
 
 ## Run
-python main.py
+cd netscope
+python3 main.py
